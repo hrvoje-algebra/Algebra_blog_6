@@ -12,8 +12,11 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    //return view('welcome');       
 });
+
+//Index
+Route::get('/', ['as' => 'index', 'uses' => 'IndexController@index']);
 
 // Authorization
 Route::get('login', 'Auth\SessionController@getLogin')->name('auth.login.form');

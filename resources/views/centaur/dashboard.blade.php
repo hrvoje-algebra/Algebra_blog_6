@@ -17,10 +17,6 @@
         </div>
     @endif
 
-    <?php
-        $user = Sentinel::findById(1);
 
-        // var_dump(Activation::create($user));
-    ?>
 </div>
 @stop
